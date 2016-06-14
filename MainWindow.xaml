@@ -1,0 +1,11 @@
+﻿<Window x:Class="KiepAlphabetScroller.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:myControls="clr-namespace:KiepAlphabetScroller"
+        Title="KiepAlphabetScroller" Height="200" Width="500" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen" WindowStyle="None" Opacity="0.9" AllowsTransparency="True" PreviewMouseDown="Window_PreviewMouseDown" MouseWheel="Window_MouseWheel" FontFamily="Arial" FontWeight="Bold" FontSize="200" Icon="Icon.ico">
+
+    <Grid>
+        <Rectangle Stroke="Red" Width="150" RadiusX="100" RadiusY="10" StrokeThickness="5" Margin="164,28,164,0" />
+        <myControls:CarouselControl x:Name="MyCarouselControl" Width="500" HorizontalAlignment="Center" VerticalAlignment="Top" />
+    </Grid>
+</Window>
